@@ -44,7 +44,7 @@ top.geometry("400x350")
 top.resizable(0, 0)
 top.title('Mp3 Player')
 
-load = Image.open("C:/Users/DELL/PycharmProjects/mp3 player/background image/bg.jpg")
+load = Image.open("bg.jpg")
 new_load = load.resize((400, 350))
 bg = ImageTk.PhotoImage(new_load)
 
@@ -62,9 +62,9 @@ song_list = Listbox(top, yscrollcommand=scrollbar.set, bg='#cfc')
 
 scrollbar.config(command=song_list.yview)
 
-play_img = PhotoImage(file='C:/Users/DELL/PycharmProjects/mp3 player/button images/play.png')
-pause_img = PhotoImage(file='C:/Users/DELL/PycharmProjects/mp3 player/button images/pause.png')
-stop_img = PhotoImage(file='C:/Users/DELL/PycharmProjects/mp3 player/button images/stop.png')
+play_img = PhotoImage(file='play.png')
+pause_img = PhotoImage(file='pause.png')
+stop_img = PhotoImage(file='stop.png')
 
 play = Button(top, image=play_img, height=35, width=35, command=play_song)
 pause = Button(top, image=pause_img, height=35, width=35, command=pause_song)
